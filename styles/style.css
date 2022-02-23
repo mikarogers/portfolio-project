@@ -1,7 +1,65 @@
-h1 {
-  font-family: "Bitter", serif;
+:root {
+  --branding-color: #ff3d00;
+  --secondary-color: white;
+  --heading-font-family: "Bitter", serif;
+  --default-font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: #0a837e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-family: var(--heading-font-family);
 }
 
 p {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: var(--default-font-family);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 160px 0 0 0;
+  color: var(--secondary-color);
+}
+
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  color: white;
+  font-family: var(--default-font-family);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 15px 25px;
+}
+
+.btn-branding:hover {
+  color: #ffbd11;
+  border-color: #ffbd11;
+  border-width: medium;
+  transition: all 200ms ease-in-out;
 }
