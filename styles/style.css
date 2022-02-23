@@ -29,6 +29,17 @@ p,
 footer {
   font-family: var(--default-font-family);
   font-size: 16px;
+  color: var(--tertiary-color);
+}
+
+footer a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 h1 {
@@ -84,6 +95,7 @@ h1 {
   border-radius: 4px;
   padding: 20px;
   margin-top: 100px;
+  color: var(--tertiary-color);
 }
 
 .btn-branding-outline {
