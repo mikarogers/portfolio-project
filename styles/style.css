@@ -9,6 +9,10 @@
   --default-font-family: "Roboto Condensed", sans-serif;
 }
 
+body {
+  background: rgb(249, 247, 254);
+}
+
 hr {
   max-width: 250px;
   margin: 140px auto 20px auto;
