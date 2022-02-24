@@ -44,11 +44,22 @@ footer a {
 footer a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
+  transition: all 200ms ease-in-out;
 }
 
 h1 {
   font-size: 70px;
   font-weight: 500;
+}
+
+a img {
+  border: 2px solid var(--branding-color);
+  border-radius: 4px;
+}
+
+a img:hover {
+  border: 2px solid var(--secondary-color);
+  transition: all 200ms ease-in-out;
 }
 
 .hero {
@@ -149,16 +160,14 @@ h1 {
   margin-bottom: 0;
 }
 
-img {
-  border: 2px solid var(--branding-color);
-  border-radius: 4px;
-}
-
 .content-description {
   background: #6eb3b1;
   border-radius: 4px;
   padding: 20px;
   color: var(--tertiary-color);
+}
+
+.content-description .index {
   margin: 105px 0;
 }
 
