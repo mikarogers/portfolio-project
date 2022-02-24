@@ -49,9 +49,39 @@ a img {
   margin: 0 auto;
 }
 
+a img.logo {
+  border: none;
+}
+
 a img:hover {
   border: 2px solid var(--secondary-color);
   transition: all 200ms ease-in-out;
+}
+
+a img.logo:hover {
+  border: none;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  font-family: var(--default-font-family);
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li.active a {
+  color: var(--tertiary-color);
 }
 
 .hero {
@@ -172,8 +202,11 @@ a img:hover {
 
 .link:hover {
   color: var(--secondary-color);
-  text-decoration: underline;
   transition: all 200ms ease-in-out;
+}
+
+.logo {
+  max-width: 110px;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +222,12 @@ a img:hover {
   .content-container {
     text-align: center;
     padding: 5px;
+  }
+  .logo {
+    max-width: 80px;
+  }
+  nav li {
+    font-size: 16px;
   }
 }
 
