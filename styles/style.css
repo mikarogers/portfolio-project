@@ -3,6 +3,7 @@
   --secondary-color: #f47339;
   --tertiary-color: #0a3d3b;
   --font-color: white;
+  --background: rgb(249, 247, 254);
   --background-color: #0a837e;
   --lighter-background-color: #6eb3b1;
   --heading-font-family: "Bitter", serif;
@@ -10,13 +11,13 @@
 }
 
 body {
-  background: rgb(249, 247, 254);
+  background: var(--background);
 }
 
 hr {
   max-width: 250px;
   margin: 140px auto 40px auto;
-  color: white;
+  color: var(--background);
 }
 
 h1,
@@ -34,6 +35,10 @@ footer {
   font-family: var(--default-font-family);
   font-size: 16px;
   color: var(--tertiary-color);
+}
+
+footer {
+  font-size: 22px;
 }
 
 h1 {
@@ -184,7 +189,7 @@ nav li.active a {
 }
 
 .content-description {
-  background: #6eb3b1;
+  background: var(--lighter-background-color);
   border-radius: 4px;
   padding: 20px;
   color: var(--tertiary-color);
@@ -207,6 +212,37 @@ nav li.active a {
 
 .logo {
   max-width: 110px;
+}
+
+.social-links {
+  color: var(--secondary-color);
+  margin: 0 15px;
+  background: var(--background);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.social-links:hover {
+  color: rgb(249, 247, 254);
+  background: var(--branding-color);
+}
+
+.contact-box {
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 4px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.contact-box h3 {
+  color: var(--background);
+}
+
+.contact-box p {
+  color: var(--background);
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
