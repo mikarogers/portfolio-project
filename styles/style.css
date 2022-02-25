@@ -155,7 +155,7 @@ nav li.active a {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .content {
@@ -195,8 +195,7 @@ nav li.active a {
   color: var(--tertiary-color);
 }
 
-.content-description,
-.index {
+.content-description.index {
   margin: 105px 0;
 }
 
@@ -252,6 +251,9 @@ nav li.active a {
   .content-description {
     text-align: center;
   }
+  .content-description.index {
+    margin: 30px 20px;
+  }
   .content-container {
     text-align: center;
     padding: 5px;
@@ -271,7 +273,7 @@ nav li.active a {
 }
 
 @media (max-width: 990px) {
-  .content-description {
+  .content-description.index {
     margin: 25px 0;
   }
 }
