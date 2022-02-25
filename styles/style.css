@@ -20,6 +20,11 @@ hr {
   color: var(--background);
 }
 
+hr.contact {
+  color: var(--tertiary-color);
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
