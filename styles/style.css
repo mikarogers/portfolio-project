@@ -3,7 +3,7 @@
   --secondary-color: #f47339;
   --tertiary-color: #0a3d3b;
   --font-color: white;
-  --background: rgb(249, 247, 254);
+  --background: rgb(201, 223, 219);
   --background-color: #0a837e;
   --lighter-background-color: #6eb3b1;
   --heading-font-family: "Bitter", serif;
@@ -224,16 +224,13 @@ nav li.active a {
 }
 
 .social-links:hover {
-  color: rgb(249, 247, 254);
+  color: var(--background);
   background: var(--branding-color);
 }
 
 .contact-box {
   background: var(--background-color);
   padding: 30px;
-  border-radius: 4px;
-  max-width: 550px;
-  margin: 0 auto;
 }
 
 .contact-box h3 {
